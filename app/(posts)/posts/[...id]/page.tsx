@@ -1,10 +1,10 @@
 "use client";
 
-import { PostType } from "@/app/page";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import { PostType } from "@/app/page";
 
-const page = () => {
+const PostById = () => {
   const { id } = useParams();
   const [formData, setFormData] = useState<{
     userId: number;
@@ -34,8 +34,6 @@ const page = () => {
       fetchData();
     }
   }, [id]);
-
-  console.log(id[0]);
 
   const handleChange = (e: any) => {
     const { name, value } = e.target;
@@ -388,4 +386,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default PostById;
