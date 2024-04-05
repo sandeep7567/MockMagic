@@ -19,9 +19,6 @@ const page = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
   const [postById, setPostById] = useState<PostType | null>(null);
-  console.log(postById);
-
-  console.log(postById);
 
   const fetchData = async () => {
     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);

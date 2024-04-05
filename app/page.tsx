@@ -110,7 +110,7 @@ export default function Home() {
                 className="mt-0.5 p-1 w-full rounded-lg border-gray-300 text-gray-700 sm:text-sm"
               >
                 <option value="">Select Limit</option>
-                {id.length > 0 && id.map((value) => <option value={value}>{value}</option>)}
+                {id.length > 0 && id.map((value) => <option key={value} value={value}>{value}</option>)}
               </select>
             </div>
             <div className="w-full flex justify-center items-center gap-4 mx-auto text-sm text-center hover:text-white/90 hover:bg-black/90 bg-black text-white p-2 rounded-md hover:scale-105 transition-all duration-200 hover:transition-all hover:duration-200">
@@ -130,7 +130,7 @@ export default function Home() {
                 className="mt-0.5 p-1 w-full rounded-lg border-gray-300 text-gray-700 sm:text-sm"
               >
                 <option value="">Select Id</option>
-                {id && id.map((value) => <option value={value}>{value}</option>)}
+                {id && id.map((value) => <option key={value} value={value}>{value}</option>)}
               </select>
             </div>
 
