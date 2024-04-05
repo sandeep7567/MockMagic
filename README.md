@@ -2,6 +2,30 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+# Frontend TODO App with JSONPlaceholder API
+
+This is a frontend TODO app that utilizes the JSONPlaceholder API to perform CRUD (Create, Read, Update, Delete) operations on posts. It allows users to view a list of posts, create new posts, view individual posts by ID, and filter posts based on specific criteria ( limit and id of posts ).
+
+## Features
+
+- View a list of posts
+- Create new posts
+- View individual posts by ID
+- Filter posts based on specific criteria (e.g., limit, user ID)
+
+## Technologies Used
+
+- Next.js
+- JSONPlaceholder API
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/sandeep7567/MockMagic.git
+
+
 First, run the development server:
 
 ```bash

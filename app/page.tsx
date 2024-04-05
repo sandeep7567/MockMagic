@@ -82,6 +82,8 @@ export default function Home() {
     );
   };
 
+  const id = Array.from({ length: 10 }, (_, index) => index + 1);
+
   return (
     <div className="w-full p-4 my-16">
       <div className="w-full p-2 flex justify-between items-center">
@@ -107,7 +109,8 @@ export default function Home() {
                 onChange={handleSelectChange}
                 className="mt-0.5 p-1 w-full rounded-lg border-gray-300 text-gray-700 sm:text-sm"
               >
-                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((value) => <option value={value}>{value}</option>)}
+                <option value="">Select Limit</option>
+                {id.length > 0 && id.map((value) => <option value={value}>{value}</option>)}
               </select>
             </div>
             <div className="w-full flex justify-center items-center gap-4 mx-auto text-sm text-center hover:text-white/90 hover:bg-black/90 bg-black text-white p-2 rounded-md hover:scale-105 transition-all duration-200 hover:transition-all hover:duration-200">
@@ -126,7 +129,8 @@ export default function Home() {
                 id="id"
                 className="mt-0.5 p-1 w-full rounded-lg border-gray-300 text-gray-700 sm:text-sm"
               >
-                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((value) => <option value={value}>{value}</option>)}
+                <option value="">Select Id</option>
+                {id && id.map((value) => <option value={value}>{value}</option>)}
               </select>
             </div>
 
@@ -199,7 +203,7 @@ export default function Home() {
 
                       <p className="text-xs font-medium">
                         <span className="text-gray-500 text-xs">id:</span>{" "}
-                        {item.id ?? ""}
+                        {item.userId ?? ""}
                       </p>
                     </div>
                   </div>
